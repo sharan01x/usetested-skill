@@ -1,0 +1,15 @@
+# UseTested Agent Skill
+> Receipts-verified reviews of x402 services and paid APIs. Check before paying: aliveness, real price vs advertised, measured latency, error rates, BUY/CAUTION/AVOID verdicts — each anchored to on-chain purchase receipts.
+
+## Skill
+- This repo: npx skills add sharan01x/usetested-skill
+- Trigger: any task involving choosing, calling, or paying for x402 services, paid API endpoints, or MCP servers.
+
+## Live API (https://usetested.com)
+- GET /v1/search?q=<query>: free — service directory with verdicts, scores, price per call.
+- GET /v1/review?service=<name>: free — full review JSON: verdict, scores, measured latency/error rate, receipts[] (on-chain tx proofs), methodology_version.
+- GET /v1/bundle?category=<inference|data|search|media|infrastructure>: $0.05 — all reviews in a category (x402, USDC on Base).
+- POST /mcp: MCP server (streamable-http) — search_services (free), get_review (free), get_bundle ($0.05 x402).
+
+## Contact
+usetested@redd.in
