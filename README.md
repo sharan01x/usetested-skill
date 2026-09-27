@@ -1,5 +1,7 @@
 # UseTested Skill
 
+[![smithery badge](https://smithery.ai/badge/authk-smithery-ai-craftily886/usetested)](https://smithery.ai/servers/authk-smithery-ai-craftily886/usetested)
+
 An [Agent Skill](https://agentskills.io) that teaches AI agents to check **receipts-verified reviews before paying for x402 services and paid APIs**.
 
 UseTested (https://usetested.com) buys and tests paid API services with real money, then publishes structured reviews anchored to on-chain purchase receipts — aliveness, real price vs advertised, measured latency, error rates, and BUY/CAUTION/AVOID verdicts. 57% of listed x402 services are dead or never settle; a 10-second review check prevents wasted spend.
