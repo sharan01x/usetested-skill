@@ -33,7 +33,7 @@ Before paying for a service, check whether it actually works and what it really 
 
 ## MCP server
 
-For agents with MCP support: `POST https://usetested.com/mcp` (streamable-http, stateless). Tools: `search_services` (free), `get_review` (free), `get_bundle` ($0.05 x402). Paid tools settle via x402 — the challenge arrives as a JSON-RPC error envelope; echo the payment payload in `params._meta["x402/payment"]`.
+For agents with MCP support: `POST https://usetested.com/mcp` (streamable-http, stateless). Tools: `search_services` (free), `get_review` (free), `request_review` (free — request we buy & test a service we haven't reviewed), `request_retest` (free — get an upfront quote to re-test an already-reviewed service: $1.00 fee + the service's per-call price × 10 probe calls), `accept_retest_quote` (paid — settle the quoted total via x402; only settled retests run, and they draw from the monthly testing budget), `get_bundle` ($0.05 x402). Paid tools settle via x402 — the challenge arrives as a JSON-RPC error envelope; echo the payment payload in `params._meta["x402/payment"]`.
 
 Machine-readable index: https://usetested.com/llms.txt — human-readable: https://usetested.com
 

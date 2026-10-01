@@ -17,7 +17,7 @@ Then ask your agent: *"Check the UseTested review before I call that x402 servic
 ## What's inside
 
 - `SKILL.md` — the skill: when to trigger, and the three-step workflow (search → free review read → optional $0.05 category bundle)
-- MCP alternative: `POST https://usetested.com/mcp` (streamable-http) — tools `search_services` (free), `get_review` (free), `get_bundle` ($0.05 via x402/USDC)
+- MCP alternative: `POST https://usetested.com/mcp` (streamable-http) — tools `search_services` (free), `get_review` (free), `request_review` (free), `request_retest` (free quote: $1.00 + ~10 probe calls at the service's price), `accept_retest_quote` (paid, x402/USDC), `get_bundle` ($0.05 via x402/USDC)
 
 ## Endpoints (from llms.txt)
 

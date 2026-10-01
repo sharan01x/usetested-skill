@@ -9,7 +9,7 @@
 - GET /v1/search?q=<query>: free — service directory with verdicts, scores, price per call.
 - GET /v1/review?service=<name>: free — full review JSON: verdict, scores, measured latency/error rate, receipts[] (on-chain tx proofs), methodology_version.
 - GET /v1/bundle?category=<inference|data|search|media|infrastructure>: $0.05 — all reviews in a category (x402, USDC on Base).
-- POST /mcp: MCP server (streamable-http) — search_services (free), get_review (free), get_bundle ($0.05 x402).
+- POST /mcp: MCP server (streamable-http) — search_services (free), get_review (free), request_review (free), request_retest (free quote; re-test = $1.00 + probe cost, paid via accept_retest_quote), get_bundle ($0.05 x402).
 
 ## Contact
 usetested@redd.in
